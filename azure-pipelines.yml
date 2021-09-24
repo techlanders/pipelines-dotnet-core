@@ -15,8 +15,8 @@ variables:
 stages:
 - stage: build
   jobs:
-    - job: job1
-        steps:
-          - script: echo "hello world"
+  - job: job1
+    steps:
+    - script: echo "hello world"
 
   
