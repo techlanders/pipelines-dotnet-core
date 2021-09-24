@@ -18,5 +18,14 @@ stages:
   - job: job1
     steps:
     - script: echo "hello world"
+    - task: Bash@3
+      inputs:
+        targetType: 'inline'
+        script: 'echo "script2 in job1"'
+  - job: job2
+    steps:
+    - script: echo "hello world from job2"
+    - script: echo "hello world from step2, job 2"
+
 
   
